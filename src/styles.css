@@ -1,0 +1,92 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid rgb(247, 160, 160);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 30px 30px rgba(36, 34, 34, 0.2);
+    background: url(https://img.freepik.com/free-photo/uranus-sky-night-background-asset-game-2d-futuristic-generative-ai_191095-2033.jpg?t=st=1685958492~exp=1685959092~hmac=55d76ea7b4727cc96ac106014e928f183e7e72ac08ea8bacee456a50f7f978b5);
+    background-position: bottom;
+    background-repeat: repeat;
+    opacity: 0.8;
+  }
+  .clock::after {
+    background: #aaa;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+  }
+  
+  .hour_hand {
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: rgb(135, 138, 0);
+    top: 23%;
+    left: 49%;
+    transform-origin: bottom;
+    border-radius: 10px;
+  }
+  
+  .min_hand {
+    position: absolute;
+    width: 5px;
+    height: 80px;
+    background: rgb(204, 241, 116);
+    top: 22.5%;
+    left: 49%;
+    transform-origin: bottom;
+    border-radius: 10px;
+  }
+  
+  .sec_hand {
+    position: absolute;
+    width: 3px;
+    height: 118px;
+    background: red;
+    top: 10.5%;
+    left: 50%;
+    transform-origin: bottom;
+    border-radius: 20px;
+  }
+  
+  .clock span {
+    position: absolute;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .twelve {
+    top: 10px;
+    left: 46%;
+  }
+  
+  .three {
+    right: 10px;
+    top: 46%;
+  }
+  
+  .six {
+    bottom: 10px;
+    left: 50%;
+  }
+  
+  .nine {
+    left: 10px;
+    top: 46%;
+  }
